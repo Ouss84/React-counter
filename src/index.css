@@ -1,63 +1,3 @@
-/* * {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-.circle {
-  display: flex;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-color: grey;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.odd {
-  background-color: indianred;
-}
-.even {
-  background-color: lawngreen;
-}
-
-header,
-footer {
-  background-color: lemonchiffon;
-  height: 5vh;
-}
-footer {
-  text-align: center;
-}
-.display {
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-}
-.button-display {
-  display: flex;
-  justify-content: space-between;
-}
-button {
-  justify-content: space-between;
-  background-color: red;
-  font-size: 1.2rem;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -84,14 +24,11 @@ footer {
 }
 
 main {
-  height: 90vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-main > div {
-  margin: 0 auto;
 }
 
 .circle {
@@ -102,6 +39,7 @@ main > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 button {
