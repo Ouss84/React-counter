@@ -74,7 +74,7 @@ body {
 
 header,
 footer {
-  background-color: chocolate;
+  background-color: rgb(207, 210, 223);
   height: 100px;
   padding: 2rem;
 }
@@ -84,7 +84,7 @@ footer {
 }
 
 main {
-  min-height: calc(100vh - 200px);
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,16 +105,34 @@ main > div {
 }
 
 button {
-  background-color: chocolate;
+  background-color: rgb(180, 184, 197);
   padding: 1rem;
   border-radius: 5px;
   border: none;
   margin: 1rem;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .odd {
-  background-color: darkorange;
+  background-color: rgb(181, 208, 250);
 }
 .even {
-  background-color: rgb(101, 44, 3);
+  background-color: rgb(219, 97, 93);
+}
+.display {
+  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header,
+footer {
+  font-size: larger;
+  font-weight: 800;
+}
+span {
+  font-weight: 400;
+  font-style: italic;
 }
