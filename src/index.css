@@ -17,12 +17,13 @@ footer {
   background-color: rgb(207, 210, 223);
   height: 100px;
   padding: 2rem;
-}
-
-footer {
   text-align: center;
+  font-size: larger;
+  font-weight: 800;
 }
-
+header {
+  font-size: 2rem;
+}
 main {
   height: 95vh;
   display: flex;
@@ -51,12 +52,27 @@ button {
   cursor: pointer;
   font-weight: 600;
 }
-
+button:hover {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+  transition: 0.2s ease-in-out 0s;
+  text-shadow: #fff 0px 0px 5px;
+  -webkit-font-smoothing: antialiased;
+}
+.add-button:hover {
+  background-color: rgb(134, 240, 157);
+}
+.remove-button:hover {
+  background-color: rgb(240, 134, 134);
+}
+.add-button:hover {
+  background-color: rgb(134, 240, 157);
+}
 .odd {
   background-color: rgb(181, 208, 250);
 }
 .even {
-  background-color: rgb(231, 144, 141);
+  background-color: rgb(223, 52, 52);
 }
 .display {
   margin: 150px 0;
@@ -65,11 +81,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-header,
-footer {
-  font-size: larger;
-  font-weight: 800;
-}
+
 span {
   font-weight: 400;
   font-style: italic;

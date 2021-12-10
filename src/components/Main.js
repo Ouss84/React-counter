@@ -37,13 +37,7 @@ class Main extends Component {
   };
   render() {
     let circleClass = "";
-    // if (this.state.counter === 0) {
-    //   circleClass = "circle";
-    // } else if (this.state.counter % 2 === 0) {
-    //   circleClass = "circle even";
-    // } else {
-    //   circleClass = "circle odd";
-    // }
+
     this.state.counter === 0
       ? (circleClass = "circle")
       : this.state.counter % 2 === 0
@@ -56,11 +50,21 @@ class Main extends Component {
           <h1 className={circleClass}>{this.state.counter}</h1>
         </div>
         <div className="button-display">
-          <button onClick={this.addFiveHandler}>Add five</button>
-          <button onClick={this.addOneHandler}>Add one</button>
-          <button onClick={this.removeOneHandler}>Remove one</button>
-          <button onClick={this.removeFiveHandler}>Remove five</button>
-          <button onClick={this.resetHandler}>Reset</button>
+          <button className="add-button" onClick={this.addFiveHandler}>
+            Add five
+          </button>
+          <button className="add-button" onClick={this.addOneHandler}>
+            Add one
+          </button>
+          <button className="remove-button" onClick={this.removeOneHandler}>
+            Remove one
+          </button>
+          <button className="remove-button" onClick={this.removeFiveHandler}>
+            Remove five
+          </button>
+          <button className="reset-button" onClick={this.resetHandler}>
+            Reset
+          </button>
         </div>
       </div>
     );
